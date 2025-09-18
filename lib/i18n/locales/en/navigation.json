@@ -1,0 +1,13 @@
+{
+  "tabs": {
+    "home": "Home",
+    "account": "Account",
+    "notifications": "Notifications",
+    "homeWelcome": "Welcome to your React Native app! This boilerplate includes everything you need to get started."
+  },
+  "settings": {
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode",
+    "systemDefault": "System Default"
+  }
+}

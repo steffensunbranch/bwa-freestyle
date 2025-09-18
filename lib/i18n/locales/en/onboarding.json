@@ -1,0 +1,21 @@
+{
+  "slide1": {
+    "title": "Launch Your App in Days!",
+    "description": "This boilerplate saves you weeks of setup time so you can focus on what makes your app special"
+  },
+  "slide2": {
+    "title": "No Coding Experience Needed",
+    "description": "Pre-built screens and components make it easy to customize your app even if you're just getting started"
+  },
+  "slide3": {
+    "title": "All Features Ready to Use",
+    "description": "Login, dark mode, notifications, payments and more - everything works out of the box"
+  },
+  "slide4": {
+    "title": "Get to the App Store Fast",
+    "description": "Follow our simple guides to customize, build and publish your app in record time"
+  },
+  "skip": "Skip",
+  "next": "Next",
+  "getStarted": "Get Started"
+}

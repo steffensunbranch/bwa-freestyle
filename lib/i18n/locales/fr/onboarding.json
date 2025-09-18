@@ -1,0 +1,21 @@
+{
+  "slide1": {
+    "title": "Lancez Votre App en Quelques Jours !",
+    "description": "Ce modèle vous fait gagner des semaines de configuration pour vous concentrer sur ce qui rend votre app unique"
+  },
+  "slide2": {
+    "title": "Aucune Expérience de Codage Nécessaire",
+    "description": "Des écrans et composants préconstruits facilitent la personnalisation de votre app même pour les débutants"
+  },
+  "slide3": {
+    "title": "Toutes les Fonctionnalités Prêtes à l'Emploi",
+    "description": "Connexion, mode sombre, notifications, paiements et plus - tout fonctionne immédiatement"
+  },
+  "slide4": {
+    "title": "Direction l'App Store Rapidement",
+    "description": "Suivez nos guides simples pour personnaliser, construire et publier votre app en un temps record"
+  },
+  "skip": "Passer",
+  "next": "Suivant",
+  "getStarted": "Commencer"
+}

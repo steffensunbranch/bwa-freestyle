@@ -1,0 +1,13 @@
+{
+  "tabs": {
+    "home": "Accueil",
+    "account": "Compte",
+    "notifications": "Notifications",
+    "homeWelcome": "Bienvenue dans votre application React Native ! Ce boilerplate inclut tout ce dont vous avez besoin pour commencer."
+  },
+  "settings": {
+    "darkMode": "Mode sombre",
+    "lightMode": "Mode clair",
+    "systemDefault": "Paramètres système"
+  }
+}

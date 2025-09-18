@@ -1,0 +1,21 @@
+{
+  "required": "Please fill in all fields",
+  "passwordMismatch": "Passwords do not match",
+  "passwordTooShort": "Password must be at least 6 characters long",
+  "termsRequired": "You must agree to the Terms of Service and Privacy Policy",
+  "somethingWentWrong": "Something went wrong. Please try again.",
+  "signOutFailed": "Sign Out Failed",
+  "failedToSignOut": "Failed to sign out",
+  "notFoundTitle": "Oops!",
+  "pageNotFound": "This screen doesn't exist.",
+  "unexpectedError": "Something went wrong. Please try again.",
+  "unknownAuthError": "Unknown authentication error",
+  "invalidUrl": {
+    "title": "Cannot Open URL",
+    "message": "The URL provided is invalid or cannot be opened."
+  },
+  "general": {
+    "title": "Error",
+    "message": "An error occurred while opening the link."
+  }
+}

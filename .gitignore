@@ -1,0 +1,92 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo
+.expo/
+dist/
+web-build/
+ios/
+android/
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.xcworkspace
+xcuserdata/
+*.hprof
+*.keystore
+!debug.keystore
+
+# Metro
+.metro-health-check*
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# Build artifacts
+build/
+coverage/
+*.tsbuildinfo
+.turbo
+
+# OS-specific files
+.DS_Store
+*.pem
+Thumbs.db
+desktop.ini
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# TypeScript
+*.tsbuildinfo
+expo-env.d.ts
+
+# Google services
+google-services.json
+GoogleService-Info.plist
+
+# Auth secrets and tokens
+*.jwt
+*.secret
+client-secret.txt
+apple-secret.txt
+google-secret.txt
+AuthKey_*.p8
+
+# Editor directories
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.sublime-*
+*.swp
+*.swo
+
+# Other
+.vercel
+.netlify
+.next
+.cache/
+.parcel-cache/
+.firebase/
+.history/
+
+# @generated expo-cli sync patterns
+# @end expo-cli
