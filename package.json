@@ -3,7 +3,11 @@
   "main": "index.js",
   "version": "1.0.0",
   "scripts": {
+    "start": "npx expo start",
     "dev": "npx expo start",
+    "android": "npx expo start --android",
+    "ios": "npx expo start --ios", 
+    "web": "npx expo start --web",
     "clean": "rm -rf .expo node_modules",
     "apple-secret": "node integrations/auth/apple-auth/gen-apple-secret-interactive.js",
     "apple-secret-manual": "node integrations/auth/apple-auth/gen-apple-secret.js"
