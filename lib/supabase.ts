@@ -3,7 +3,7 @@ import AsyncStorage from "@react-native-async-storage/async-storage";
 import * as SecureStore from 'expo-secure-store';
 import * as aesjs from 'aes-js';
 import 'react-native-get-random-values';
-import { getEnvVar } from './getEnv';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from './config';
 import { Platform } from 'react-native';
 
 // Cross-platform secure storage that works on both mobile and web
@@ -83,10 +83,12 @@ class CrossPlatformSecureStore {
   }
 }
 
-const supabaseUrl = getEnvVar('EXPO_PUBLIC_SUPABASE_URL');
-const supabaseAnonKey = getEnvVar('EXPO_PUBLIC_SUPABASE_ANON_KEY');
+// Validate configuration
+if (SUPABASE_URL === 'https://your-project.supabase.co' || SUPABASE_ANON_KEY === 'your-anon-key-here') {
+  console.warn('[config] Using placeholder Supabase values. Please update lib/config.ts with your actual Supabase credentials.');
+}
 
-export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
   auth: {
     storage: new CrossPlatformSecureStore(),
     autoRefreshToken: true,
