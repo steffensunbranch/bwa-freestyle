@@ -23,12 +23,12 @@ Run these commands in sequence to set up and build the project:
 3. **Supabase Configuration**:
    - Create project at [supabase.com](https://supabase.com)
    - Get Project URL and anon key from Project Settings → API
-   - Add to `.env`:
-   ```env
-   EXPO_PUBLIC_SUPABASE_URL=your_supabase_url
-   EXPO_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+   - Update `lib/config.ts` with your credentials:
+   ```typescript
+   export const SUPABASE_URL = 'https://your-project.supabase.co';
+   export const SUPABASE_ANON_KEY = 'your-anon-key-here';
    ```
-   - Configure URLs for Expo Go (use IP from terminal output)
+   - The app will show a warning until you configure these values
 
 4. **Lint the code**: `npm run lint`
    - Takes approximately 2-3 seconds
@@ -114,7 +114,7 @@ npx expo export --platform web --no-minify  # Verify build works (20+ seconds)
 │   ├── hooks/          # Custom React hooks
 │   ├── i18n/           # Internationalization
 │   ├── notifications/  # Push notifications
-│   ├── config.ts       # App configuration
+│   ├── config.ts       # App configuration (Supabase, URLs, etc.)
 │   ├── theme.ts        # Theme configuration
 │   └── utils.ts        # Utility functions
 ├── assets/             # Static assets (images, fonts, lotties)
@@ -199,7 +199,8 @@ npx expo export --platform web --no-minify  # Verify build works (20+ seconds)
 
 ### Environment Setup
 - Copy `app.json.example` to `app.json` and configure
-- Set up environment variables as needed
+- Update `lib/config.ts` with your Supabase credentials and app settings
+- No environment variables needed - all configuration is in the config file
 
 ### Key Dependencies
 - **Expo SDK 54**: React Native development platform
@@ -218,7 +219,8 @@ npx expo export --platform web --no-minify  # Verify build works (20+ seconds)
 - **Metro bundler issues**: Clear cache with `npx expo start --clear`
 - **TypeScript errors**: Ensure all imports use proper path aliases
 - **Build failures**: Check for syntax errors and run `npm run lint`
-- **Auth issues**: Verify configuration in `lib/auth/`
+- **Auth issues**: Verify configuration in `lib/config.ts` and `lib/auth/`
+- **Supabase connection**: Check that `lib/config.ts` has correct credentials
 
 ### Environment Notes
 - **CI mode**: Metro runs in CI mode in automated environments (no hot reloading)
